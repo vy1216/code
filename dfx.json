@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "Yash_backend": {
+      "main": "src/Yash_backend/main.mo",
+      "type": "motoko"
+    },
+    "Yash_frontend": {
+      "dependencies": [
+        "Yash_backend"
+      ],
+      "source": [
+        "src/Yash_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Yash_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
